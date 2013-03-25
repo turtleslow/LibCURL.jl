@@ -13,8 +13,8 @@
 @c Ptr{Uint8} curl_easy_unescape (Ptr{CURL}, Ptr{Uint8}, Int32, Ptr{Int32}) libcurl
 @c Ptr{Uint8} curl_unescape (Ptr{Uint8}, Int32) libcurl
 @c None curl_free (Ptr{None},) libcurl
-@c CURLcode curl_global_init (Int32,) libcurl
-@c CURLcode curl_global_init_mem (Int32, curl_malloc_callback, curl_free_callback, curl_realloc_callback, curl_strdup_callback, curl_calloc_callback) libcurl
+@c CURLcode curl_global_init (Int64,) libcurl
+@c CURLcode curl_global_init_mem (Int64, curl_malloc_callback, curl_free_callback, curl_realloc_callback, curl_strdup_callback, curl_calloc_callback) libcurl
 @c None curl_global_cleanup () libcurl
 @c Ptr{Void} curl_slist_append (Ptr{Void}, Ptr{Uint8}) libcurl
 @c None curl_slist_free_all (Ptr{Void},) libcurl
@@ -46,7 +46,7 @@
 @c CURLMcode curl_multi_socket (Ptr{CURLM}, curl_socket_t, Ptr{Int32}) libcurl
 @c CURLMcode curl_multi_socket_action (Ptr{CURLM}, curl_socket_t, Int32, Ptr{Int32}) libcurl
 @c CURLMcode curl_multi_socket_all (Ptr{CURLM}, Ptr{Int32}) libcurl
-@c CURLMcode curl_multi_timeout (Ptr{CURLM}, Ptr{Int32}) libcurl
+@c CURLMcode curl_multi_timeout (Ptr{CURLM}, Ptr{Int64}) libcurl
 @c CURLMcode curl_multi_setopt (Ptr{CURLM}, CURLMoption) libcurl
 @c CURLMcode curl_multi_assign (Ptr{CURLM}, curl_socket_t, Ptr{None}) libcurl
 
